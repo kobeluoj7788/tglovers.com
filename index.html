@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CouplesFun – Where Connections Happen</title>
+  <title>TG Lovers – Where Connections Happen</title>
+
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #333; }
+
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+    }
+    .nav-left {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: white;
+    }
+    .nav-right a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .nav-right a:hover { text-decoration: underline; }
+
     header {
       position: relative;
       height: 100vh;
@@ -32,6 +59,7 @@
     }
     h1 { font-size: 3rem; margin-bottom: 1rem; }
     p { font-size: 1.3rem; margin-bottom: 2rem; }
+
     a.button {
       background-color: #ff4081;
       color: white;
@@ -42,6 +70,29 @@
       transition: background 0.3s ease;
     }
     a.button:hover { background-color: #e91e63; }
+
+    .app-buttons {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px;
+      z-index: 2;
+    }
+    .app-buttons a {
+      background: white;
+      color: #333;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .app-buttons a:hover {
+      background: #f0f0f0;
+    }
+
     footer {
       text-align: center;
       padding: 40px 0;
@@ -50,16 +101,34 @@
     }
   </style>
 </head>
+
 <body>
+
+  <div class="navbar">
+    <div class="nav-left">TG Lovers</div>
+    <div class="nav-right">
+      <a href="#">About Us</a>
+      <a href="#">TG News</a>
+      <a href="#">Sign In</a>
+    </div>
+  </div>
+
   <header>
     <div class="hero-content">
-      <h1>CouplesFun – Where Connections Happen</h1>
+      <h1>TG Lovers – Where Connections Happen</h1>
       <p>Join open-minded singles and couples looking for something real</p>
-      <a href="https://www.bicupid.com/?tid=af100017352_cf" class="button">Join Now</a>
+      <a href="#" class="button">Join Now</a>
+    </div>
+
+    <div class="app-buttons">
+      <a href="#">iOS App</a>
+      <a href="#">Android App</a>
     </div>
   </header>
+
   <footer>
-    © 2025 CouplesFun. All Rights Reserved.
+    © 2025 TG Lovers. All Rights Reserved.
   </footer>
+
 </body>
 </html>
